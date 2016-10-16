@@ -1,0 +1,43 @@
+.carousel {
+  max-width: 960px;  
+  margin: 0 auto;
+}
+
+.carousel__content {
+  
+  text-align: left;
+  background-color: #E6E6E7;
+
+  li {
+    left: 0 !important;
+    opacity: 0;
+    transition: opacity .5s ease;
+
+    &.is-selected {
+      opacity: 1;
+      transition: opacity .5s ease;
+    }
+  }
+
+  .flickity-slider {
+    transform: none !important;
+  }
+}
+
+.carousel__thumbs {
+  li {
+    cursor: pointer;
+    opacity: 0.5;
+    list-style: none;
+    margin: 0px 2px;
+    padding: 0 0px;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.is-nav-selected {
+      opacity: 1;
+    }
+  }
+}
